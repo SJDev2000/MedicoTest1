@@ -4,5 +4,5 @@ RUN mkdir /code
 WORKDIR /code
 COPY requirements.txt /code/
 RUN pip3 install -r requirements.txt
-COPY . /code/
+COPY ./test/ /code/
 CMD python3 run.py
