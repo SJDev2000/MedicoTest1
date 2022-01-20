@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.secret_key = "mysecretkey123"
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://admin:admin@host.docker.internal/medico"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql+psycopg2://admin:admin@postgres:5432/medico"
 app.config["SQLALCHEMY_TRACK_MODIFICATION"] = False
 db = SQLAlchemy(app)
 
